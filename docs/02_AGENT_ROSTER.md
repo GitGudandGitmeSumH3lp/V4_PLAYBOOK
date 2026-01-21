@@ -1,44 +1,45 @@
 ---
-tags: [reference, agents]
+tags:
+  - reference
+  - agents
+  - roster
 ---
-
-# V4.0 Agent Roster
-
-A quick reference guide for the Packet Prompting Agent Swarm.
-
-| Agent File | Role | Persona | Best Model (Tier) | Skills to Inject |
-| :--- | :--- | :--- | :--- | :--- |
-| [[01_architect]] | **System Design** | Contract-First Designer | **Claude 3.5 Sonnet** (Premium) | N/A |
-| [[02_implementer]] | **Coding** | Logic-Focused Generator | **DeepSeek V3 / Qwen** (High Vol) | [[reflection_logic]] |
-| [[03_refiner]] | **Polish** | Stylist & Documenter | **Gemini 2.0 Flash** (Fast) | [[python_strict_typing]] |
-| [[04_researcher]] | **Analysis** | Knowledge Advisor | **Claude 3.5 Sonnet** (Premium) | N/A |
-| [[05_auditor]] | **QA** | Adversarial Reviewer | **Gemini Flash** (L1) / **Claude** (L2) | [[security_hardening]] |
 
 ---
 
-## Agent Capabilities & Scopes
+# V4.0 System Roster
 
-### [[01_architect]]
-*   **Scope:** Interface design, data structures, integration mapping.
-*   **Output:** Markdown Contracts (`docs/contracts/*.md`).
-*   **Authority:** Highest. Defines the "Truth" of the system.
+## 1. The Core Agents (Reasoning)
 
-### [[02_implementer]]
-*   **Scope:** Logic implementation, algorithm writing.
-*   **Output:** Python Code (`src/*.py`).
-*   **Constraint:** Cannot change method signatures defined by Architect.
+| Agent File | Role | Best Model | Purpose |
+| :--- | :--- | :--- | :--- |
+| [[00_analyst]] | Product Owner | **Gemini 1.5 Pro** | Turns "Ideas" into "Specs". |
+| [[01_architect]] | System Designer | **Claude Sonnet** | Turns "Specs" into "Contracts". |
+| [[02_implementer]] | Logic Generator | **DeepSeek V3** | Turns "Contracts" into "Code". |
+| [[03_refiner]] | Stylist | **Gemini Flash** | Formats and polishes code. |
+| [[05_auditor]] | QA Judge | **Claude Sonnet** | Verifies Quality & Security. |
+| [[04_researcher]] | Context Hunter | **Gemini 1.5 Pro** | Finds information. |
 
-### [[03_refiner]]
-*   **Scope:** Docstrings, PEP-8 formatting, import sorting.
-*   **Output:** Python Code (Polished).
-*   **Constraint:** **NEVER** changes logic or control flow.
+---
 
-### [[04_researcher]]
-*   **Scope:** Explaining concepts, finding files, architectural archaeology.
-*   **Output:** Explanations and Citations.
-*   **Constraint:** Read-only access. Does not generate code.
+## 2. The Utilities (Infrastructure)
+These prompts require **Compliance**. They perform administrative tasks, formatting, and file management.
 
-### [[05_auditor]]
-*   **Scope:** Contract verification, security checks, style enforcement.
-*   **Output:** Pass/Fail Decision + Score (0-100).
-*   **Authority:** Can reject work from any other agent.
+| Utility File | Role | Best Model | Trigger When... |
+| :--- | :--- | :--- | :--- |
+| [[state_updater]] | Clerk | **Gemini Flash** | You finish a task and need to log it. |
+| [[map_generator]] | Cartographer | **Gemini 1.5 Pro** | You create or update a Contract. |
+| [[doc_scribe]] | Documenter | **Gemini Flash** | You have working code that needs comments. |
+| [[code_merger]] | Patcher | **Claude Sonnet** | You need to insert a fix into a large file. |
+| [[wisdom_miner]] | Historian | **Gemini Thinking** | You solved a hard bug and want to remember how. |
+
+---
+
+## 3. The Skills (Injectables)
+Modular capabilities to paste into the Agent's prompt based on the situation.
+
+| Skill File | Description | Usage |
+| :--- | :--- | :--- |
+| [[python_strict_typing]] | Enforces `List[str]`, `Optional[int]`, etc. | Inject into **Implementer** & **Refiner**. |
+| [[security_hardening]] | Enforces OWASP standards (No SQLi, Secrets). | Inject into **Implementer** & **Auditor**. |
+| [[reflection_logic]] | Forces "Draft -> Critique -> Output" loop. | Inject into **Implementer** for complex tasks. |

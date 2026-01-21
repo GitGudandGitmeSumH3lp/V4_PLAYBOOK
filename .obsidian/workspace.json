@@ -13,15 +13,170 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/01_WORKFLOW_GUIDE.md",
+                "file": "docs/00_MASTER_PLAYBOOK.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01_WORKFLOW_GUIDE"
+              "title": "00_MASTER_PLAYBOOK"
+            }
+          },
+          {
+            "id": "479dce8897a82723",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/WORKFLOW_SCENARIO_GUIDE.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "WORKFLOW_SCENARIO_GUIDE"
+            }
+          },
+          {
+            "id": "e2e2c52aff225006",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/02_AGENT_ROSTER.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "02_AGENT_ROSTER"
+            }
+          },
+          {
+            "id": "ed1504c525c37358",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AGENTS/04_researcher.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "04_researcher"
+            }
+          },
+          {
+            "id": "f04f6577deb42d1e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AGENTS/00_orchestrator.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "00_orchestrator"
+            }
+          },
+          {
+            "id": "6cf92a69e120a5de",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AGENTS/02_implementer.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "02_implementer"
+            }
+          },
+          {
+            "id": "f8d0f359fc18ad65",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "UTILS/state_updater.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "state_updater"
+            }
+          },
+          {
+            "id": "3788517e1607e2aa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "UTILS/state_updater.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "state_updater"
+            }
+          },
+          {
+            "id": "efe890f4101724fa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "UTILS/state_updater.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "state_updater"
+            }
+          },
+          {
+            "id": "56d9329fb5aaa24e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "UTILS/state_updater.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "state_updater"
+            }
+          },
+          {
+            "id": "225a256233b73f06",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AGENTS/00_orchestrator.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "00_orchestrator"
+            }
+          },
+          {
+            "id": "7229a36e0f78dc58",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/00_MASTER_PLAYBOOK.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "00_MASTER_PLAYBOOK"
             }
           }
-        ]
+        ],
+        "currentTab": 11
       }
     ],
     "direction": "vertical"
@@ -94,7 +249,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/01_WORKFLOW_GUIDE.md",
+                "file": "docs/00_MASTER_PLAYBOOK.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +259,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 01_WORKFLOW_GUIDE"
+              "title": "Backlinks for 00_MASTER_PLAYBOOK"
             }
           },
           {
@@ -113,12 +268,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/01_WORKFLOW_GUIDE.md",
+                "file": "docs/00_MASTER_PLAYBOOK.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 01_WORKFLOW_GUIDE"
+              "title": "Outgoing links from 00_MASTER_PLAYBOOK"
             }
           },
           {
@@ -156,13 +311,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/01_WORKFLOW_GUIDE.md",
+                "file": "docs/00_MASTER_PLAYBOOK.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 01_WORKFLOW_GUIDE"
+              "title": "Outline of 00_MASTER_PLAYBOOK"
             }
           }
         ]
@@ -183,27 +338,35 @@
       "bases:Create new base": false
     }
   },
-  "active": "c9a92432532123cf",
+  "active": "7229a36e0f78dc58",
   "lastOpenFiles": [
+    "docs/02_AGENT_ROSTER.md",
+    "AGENTS/00_analyst.md",
+    "docs/01_WORKFLOW_GUIDE.md",
+    "AGENTS/00_orchestrator.md",
     "docs/00_MASTER_PLAYBOOK.md",
+    "UTILS/doc_scribe.md",
+    "HOOKS/pre_session_check.md",
+    "AGENTS/03_refiner.md",
+    "UTILS/wisdom_miner.md",
+    "AGENTS/05_auditor.md",
     "AGENTS/04_researcher.md",
     "AGENTS/01_architect.md",
-    "AGENTS/02_implementer.md",
+    "docs/WORKFLOW_DEPENDENCIES.md",
+    "CONTEXT/project_memory.md",
+    "CONTEXT/api_map_lite.md",
+    "UTILS/code_merger.md",
+    "UTILS/state_updater.md",
+    "UTILS/map_generator.md",
     "README.md",
+    "AGENTS/02_implementer.md",
+    "Untitled",
+    "UTILS",
+    "docs/WORKFLOW_SCENARIO_GUIDE.md",
     "SKILLS/langs/rust_ownership.md",
     "SKILLS/langs/react_hooks.md",
     "SKILLS/core/security_hardening.md",
     "SKILLS/core/reflection_logic.md",
-    "SKILLS/core/python_strict_typing.md",
-    "RULES/HARD_CONSTRAINTS.md",
-    "RULES/SOFT_GUIDELINES.md",
-    "docs/02_AGENT_ROSTER.md",
-    "docs/01_WORKFLOW_GUIDE.md",
-    "HOOKS/post_imp_audit.md",
-    "HOOKS/pre_session_check.md",
-    "CONTEXT/project_memory.md",
-    "CONTEXT/api_map_lite.md",
-    "AGENTS/05_auditor.md",
-    "AGENTS/03_refiner.md"
+    "SKILLS/core/python_strict_typing.md"
   ]
 }

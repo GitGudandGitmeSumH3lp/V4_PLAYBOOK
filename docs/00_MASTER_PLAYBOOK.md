@@ -5,61 +5,69 @@ status: Active
 version: 4.0
 ---
 
+---
+
 # Packet Prompting V4.0: Master Playbook
 
 ## 1. System Philosophy
 **From Monolith to Swarm.**
-Previous versions (V3.x) relied on linear, long-context conversations with a single model. **V4.0** shifts to a **Contract-First, Multi-Agent Swarm** architecture.
+V4.0 shifts from linear, long-context conversations to a **Contract-First, Multi-Agent Swarm** architecture supported by specialized **Utilities**.
 
 **Core Principles:**
-1.  **Specialization:** Different models for different tasks (Reasoning vs. Coding vs. Polish).
-2.  **Cost Optimization:** Use premium models (Claude Sonnet) *only* for Architecture and final Auditing. Use high-volume/free models (DeepSeek, Gemini Flash) for Implementation and Refinement.
-3.  **Contract Law:** No implementation begins without a strict Interface Contract defined by the Architect.
-4.  **Adversarial Quality:** The [[05_auditor]] is an enemy of the [[02_implementer]]. Approval is earned, not assumed.
+1.  **Specialization:** Agents (Reasoning) vs. Utilities (Infrastructure).
+2.  **Cost Optimization:** Use premium models (Account C) only for Architecture/Auditing. Use fast models (Account A) for Scribing and State updates.
+3.  **Contract Law:** No implementation begins without a strict Interface Contract.
+4.  **Context Hygiene:** Utilities run automatically to keep maps and state files fresh.
 
 ---
 
 ## 2. Quick Start Strategy
 To start a new feature immediately:
 
-1.  **Run the Pre-Flight:** Execute the checklist in [[pre_session_check]].
-2.  **Design (Account C):** Paste `AGENTS/01_architect.md` + your specs. Get a **Contract**.
-3.  **Build (Account E):** Paste `AGENTS/02_implementer.md` + the Contract. Get **Raw Code**.
-4.  **Verify (Account A/C):** Paste `AGENTS/05_auditor.md` + Contract + Code. Get **Pass/Fail**.
+1.  **Run Pre-Flight:** Execute [[pre_session_check]].
+2. ** Define (Account B):** Run [[00_analyst]] with your raw idea. Get a **Spec**.
+3.  **Design (Account C):** Run [[01_architect]]. Get a **Contract**.
+4.  **Build (Account E):** Run [[02_implementer]]. Get **Raw Code**.
+5.  **Refine (Account A):** Run [[03_refiner]] + [[doc_scribe]]. Get **Polished Code**.
+6.  **Verify (Account C):** Run [[05_auditor]]. Get **Pass**.
+7.  **Cleanup (Account A/B):** Run [[state_updater]] and [[map_generator]].
 
 ---
 
 ## 3. The Architecture
 
 ### The Agents (The "Who")
-The workforce is divided into specialized roles. See [[02_AGENT_ROSTER]] for details.
-*   **The Brain:** [[01_architect]] (Defines *what* to build).
-*   **The Hands:** [[02_implementer]] (Writes the logic).
-*   **The Stylist:** [[03_refiner]] (Fixes formatting and docs).
-*   **The Judge:** [[05_auditor]] (Pass/Fail authority).
-*   **The Librarian:** [[04_researcher]] (Explains context).
+The reasoning workforce. See [[02_AGENT_ROSTER]] for details.
+*   **The Brain:** [[01_architect]]
+*   **The Hands:** [[02_implementer]]
+*   **The Stylist:** [[03_refiner]]
+*   **The Judge:** [[05_auditor]]
+*   **The Librarian:** [[04_researcher]]
+
+### The Utilities (The Infrastructure)
+Automated tools that maintain the system state.
+*   [[state_updater]]: Updates `_STATE.md`.
+*   [[map_generator]]: Updates `API_MAP.md`.
+*   [[wisdom_miner]]: Updates `project_memory.md`.
+*   [[code_merger]]: Safely patches existing files.
+*   [[doc_scribe]]: Adds documentation (non-intrusive).
 
 ### The Skills (The "How")
-Modular prompt injections that add specific capabilities to agents.
-*   [[python_strict_typing]]: Enforces type hints.
-*   [[security_hardening]]: Enforces OWASP standards.
-*   [[reflection_logic]]: Forces agents to "think twice" before outputting.
-
-### The Governance (The Rules)
-*   [[HARD_CONSTRAINTS]]: Non-negotiable system laws (Forbidden libraries, file limits).
-*   [[pre_session_check]]: Checklist before starting.
-*   [[post_imp_audit]]: Checklist before auditing.
+Modular prompt injections.
+*   [[python_strict_typing]]
+*   [[security_hardening]]
+*   [[reflection_logic]]
 
 ---
 
 ## 4. Account Strategy & Model Allocation
-V4.0 is designed to save costs while increasing quality by leveraging specific model strengths.
 
-| Account ID | Model Family | Role | Assigned Agents |
+| Account ID | Model Family | Role | Assigned Tools |
 | :--- | :--- | :--- | :--- |
-| **Account C** | **Claude 3.5 Sonnet / o1** | **High Intelligence** | [[01_architect]], [[04_researcher]], [[05_auditor]] (Escalation) |
+| **Account C** | **Claude 3.5 Sonnet / o1** | **High Intelligence** | [[01_architect]], [[05_auditor]], [[code_merger]] |
 | **Account E** | **DeepSeek V3 / Qwen 2.5** | **High Volume Logic** | [[02_implementer]] |
-| **Account A** | **Gemini 2.0 Flash** | **Fast Context/Refine** | [[03_refiner]], [[05_auditor]] (First Pass) |
+| **Account A** | **Gemini 2.0 Flash** | **Fast Context/Admin** | [[03_refiner]], [[doc_scribe]], [[state_updater]] |
+| **Account B** | **Gemini 1.5 Pro** | **Large Context** | [[04_researcher]], [[map_generator]] |
 
 > [!TIP] Cost Saving Strategy
-> Never use **Account C** for generating docstrings or formatting code. That is a waste of "intelligence tokens." Use **Account A** ([[03_refiner]]) for all polish tasks.
+> Never use **Account C** for `[[doc_scribe]]` or `[[state_updater]]`. It is a waste of "intelligence tokens." Use **Account A** for these infrastructure tasks.
