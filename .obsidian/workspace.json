@@ -1,0 +1,209 @@
+{
+  "main": {
+    "id": "dd81447333b77966",
+    "type": "split",
+    "children": [
+      {
+        "id": "78b43ee84ac4fa7c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c9a92432532123cf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/01_WORKFLOW_GUIDE.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "01_WORKFLOW_GUIDE"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "56e996384c5165d6",
+    "type": "split",
+    "children": [
+      {
+        "id": "02569026cf1cfcf1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c8b9d16d4b89c0a4",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "72958e6e00508c09",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "6494bf30e56df878",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "1f2a7835e0e66726",
+    "type": "split",
+    "children": [
+      {
+        "id": "a878b6d73a163c9f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b9978316ea3bab14",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "docs/01_WORKFLOW_GUIDE.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 01_WORKFLOW_GUIDE"
+            }
+          },
+          {
+            "id": "b52f3e2c22d224b4",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "docs/01_WORKFLOW_GUIDE.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 01_WORKFLOW_GUIDE"
+            }
+          },
+          {
+            "id": "a6787c059d45af07",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "bde170827cf27423",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "6ec0641748f00d59",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "docs/01_WORKFLOW_GUIDE.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 01_WORKFLOW_GUIDE"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "c9a92432532123cf",
+  "lastOpenFiles": [
+    "docs/00_MASTER_PLAYBOOK.md",
+    "AGENTS/04_researcher.md",
+    "AGENTS/01_architect.md",
+    "AGENTS/02_implementer.md",
+    "README.md",
+    "SKILLS/langs/rust_ownership.md",
+    "SKILLS/langs/react_hooks.md",
+    "SKILLS/core/security_hardening.md",
+    "SKILLS/core/reflection_logic.md",
+    "SKILLS/core/python_strict_typing.md",
+    "RULES/HARD_CONSTRAINTS.md",
+    "RULES/SOFT_GUIDELINES.md",
+    "docs/02_AGENT_ROSTER.md",
+    "docs/01_WORKFLOW_GUIDE.md",
+    "HOOKS/post_imp_audit.md",
+    "HOOKS/pre_session_check.md",
+    "CONTEXT/project_memory.md",
+    "CONTEXT/api_map_lite.md",
+    "AGENTS/05_auditor.md",
+    "AGENTS/03_refiner.md"
+  ]
+}
