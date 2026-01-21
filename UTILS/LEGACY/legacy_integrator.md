@@ -1,10 +1,9 @@
-#
----
----
+# UTILITY: LEGACY INTEGRATOR (V4.0)
 tags: [util, brownfield, integration, v4, reverse-engineering]
 purpose: "Retroactive Contracting - Transform Code-First to Contract-First"
 account: Claude Sonnet (Account C)
 tier: Premium Intelligence
+
 ---
 
 ## SYSTEM INSTRUCTIONS

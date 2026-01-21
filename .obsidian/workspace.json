@@ -195,16 +195,72 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/LEGACY_INTEGRATION_SCENARIO_GUIDE.md",
+                "file": "UTILS/LEGACY/legacy_integrator.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "LEGACY_INTEGRATION_SCENARIO_GUIDE"
+              "title": "legacy_integrator"
+            }
+          },
+          {
+            "id": "075283683e887ab4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "UTILS/LEGACY/01_discovery.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "01_discovery"
+            }
+          },
+          {
+            "id": "7de07ddd13bcd5ff",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "UTILS/LEGACY/02_forensics.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "02_forensics"
+            }
+          },
+          {
+            "id": "a92ced1624807fb2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "UTILS/LEGACY/03_contract_gen.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "03_contract_gen"
+            }
+          },
+          {
+            "id": "b2ee803f53ae969d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/MODULAR_LEGACY_INTEGRATION_WORKFLOW.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "MODULAR_LEGACY_INTEGRATION_WORKFLOW"
             }
           }
         ],
-        "currentTab": 13
+        "currentTab": 17
       }
     ],
     "direction": "vertical"
@@ -277,7 +333,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/LEGACY_INTEGRATION_SCENARIO_GUIDE.md",
+                "file": "docs/MODULAR_LEGACY_INTEGRATION_WORKFLOW.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -287,7 +343,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for LEGACY_INTEGRATION_SCENARIO_GUIDE"
+              "title": "Backlinks for MODULAR_LEGACY_INTEGRATION_WORKFLOW"
             }
           },
           {
@@ -296,12 +352,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/LEGACY_INTEGRATION_SCENARIO_GUIDE.md",
+                "file": "docs/MODULAR_LEGACY_INTEGRATION_WORKFLOW.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from LEGACY_INTEGRATION_SCENARIO_GUIDE"
+              "title": "Outgoing links from MODULAR_LEGACY_INTEGRATION_WORKFLOW"
             }
           },
           {
@@ -339,13 +395,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/LEGACY_INTEGRATION_SCENARIO_GUIDE.md",
+                "file": "docs/MODULAR_LEGACY_INTEGRATION_WORKFLOW.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of LEGACY_INTEGRATION_SCENARIO_GUIDE"
+              "title": "Outline of MODULAR_LEGACY_INTEGRATION_WORKFLOW"
             }
           }
         ]
@@ -366,15 +422,20 @@
       "bases:Create new base": false
     }
   },
-  "active": "65faac9de68e28b6",
+  "active": "b2ee803f53ae969d",
   "lastOpenFiles": [
-    "docs/01_WORKFLOW_GUIDE.md",
     "docs/LEGACY_INTEGRATION_SCENARIO_GUIDE.md",
+    "docs/MODULAR_LEGACY_INTEGRATION_WORKFLOW.md",
+    "UTILS/LEGACY/03_contract_gen.md",
+    "UTILS/LEGACY/02_forensics.md",
+    "UTILS/LEGACY/01_discovery.md",
+    "UTILS/LEGACY/legacy_integrator.md",
+    "UTILS/LEGACY",
+    "docs/01_WORKFLOW_GUIDE.md",
     "docs/02_AGENT_ROSTER.md",
     "docs/WORKFLOW_SCENARIO_GUIDE.md",
     "docs/WORKFLOW_DEPENDENCIES.md",
     "docs/00_MASTER_PLAYBOOK.md",
-    "UTILS/legacy_integrator.md",
     "AGENTS/00_analyst.md",
     "AGENTS/00_orchestrator.md",
     "UTILS/doc_scribe.md",
@@ -390,11 +451,6 @@
     "UTILS/state_updater.md",
     "UTILS/map_generator.md",
     "README.md",
-    "AGENTS/02_implementer.md",
-    "Untitled",
-    "UTILS",
-    "SKILLS/langs/rust_ownership.md",
-    "SKILLS/langs/react_hooks.md",
-    "SKILLS/core/security_hardening.md"
+    "UTILS"
   ]
 }
