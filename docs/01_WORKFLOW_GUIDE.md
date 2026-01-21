@@ -65,7 +65,16 @@ tags:
 | **4** | [[wisdom_miner]] | **D** | Session Transcript | **Updated Memory** |
 
 ---
+## 🏛️ Scenario 5: Brownfield Integration (The Archaeologist)
+**Context:** Bringing existing/legacy code into the V4.0 system without rewriting it.
+**Cost Profile:** ⭐⭐⭐ (High - requires analysis)
 
+| Step | Tool | Account | Action / Input | Output |
+| :--- | :--- | :--- | :--- | :--- |
+| **1** | [[legacy_integrator]] | **C** | Legacy Code | **Retroactive Contract** |
+| **2** | [[map_generator]] | **B** | New Contract | **Updated API Maps** |
+| **3** | [[05_auditor]] | **C** | Code + Contract | **Baseline Status** |
+| **4** | [[state_updater]] | **A** | "Integrated legacy module" | **Updated _STATE.md** |
 ## ⚡ Quick Select Decision Matrix
 
 | Current Problem | **Select Scenario** | **Primary Utils Used** |

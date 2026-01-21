@@ -25,13 +25,14 @@ tags:
 ## 2. The Utilities (Infrastructure)
 These prompts require **Compliance**. They perform administrative tasks, formatting, and file management.
 
-| Utility File | Role | Best Model | Trigger When... |
-| :--- | :--- | :--- | :--- |
-| [[state_updater]] | Clerk | **Gemini Flash** | You finish a task and need to log it. |
-| [[map_generator]] | Cartographer | **Gemini 1.5 Pro** | You create or update a Contract. |
-| [[doc_scribe]] | Documenter | **Gemini Flash** | You have working code that needs comments. |
-| [[code_merger]] | Patcher | **Claude Sonnet** | You need to insert a fix into a large file. |
-| [[wisdom_miner]] | Historian | **Gemini Thinking** | You solved a hard bug and want to remember how. |
+| Utility File          | Role          | Best Model          | Trigger When...                                 |
+| :-------------------- | :------------ | :------------------ | :---------------------------------------------- |
+| [[state_updater]]     | Clerk         | **Gemini Flash**    | You finish a task and need to log it.           |
+| [[map_generator]]     | Cartographer  | **Gemini 1.5 Pro**  | You create or update a Contract.                |
+| [[doc_scribe]]        | Documenter    | **Gemini Flash**    | You have working code that needs comments.      |
+| [[code_merger]]       | Patcher       | **Claude Sonnet**   | You need to insert a fix into a large file.     |
+| [[wisdom_miner]]      | Historian     | **Gemini Thinking** | You solved a hard bug and want to remember how. |
+| [[legacy_integrator]] | Archaeologist | **Claude Sonnet**   | You need to bring old code into the V4 system.  |
 
 ---
 

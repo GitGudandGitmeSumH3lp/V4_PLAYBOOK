@@ -174,9 +174,37 @@
               "icon": "lucide-file",
               "title": "00_MASTER_PLAYBOOK"
             }
+          },
+          {
+            "id": "ef0d89308852e205",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/00_MASTER_PLAYBOOK.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "00_MASTER_PLAYBOOK"
+            }
+          },
+          {
+            "id": "65faac9de68e28b6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "docs/LEGACY_INTEGRATION_SCENARIO_GUIDE.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "LEGACY_INTEGRATION_SCENARIO_GUIDE"
+            }
           }
         ],
-        "currentTab": 11
+        "currentTab": 13
       }
     ],
     "direction": "vertical"
@@ -249,7 +277,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/00_MASTER_PLAYBOOK.md",
+                "file": "docs/LEGACY_INTEGRATION_SCENARIO_GUIDE.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -259,7 +287,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 00_MASTER_PLAYBOOK"
+              "title": "Backlinks for LEGACY_INTEGRATION_SCENARIO_GUIDE"
             }
           },
           {
@@ -268,12 +296,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/00_MASTER_PLAYBOOK.md",
+                "file": "docs/LEGACY_INTEGRATION_SCENARIO_GUIDE.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 00_MASTER_PLAYBOOK"
+              "title": "Outgoing links from LEGACY_INTEGRATION_SCENARIO_GUIDE"
             }
           },
           {
@@ -311,13 +339,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/00_MASTER_PLAYBOOK.md",
+                "file": "docs/LEGACY_INTEGRATION_SCENARIO_GUIDE.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 00_MASTER_PLAYBOOK"
+              "title": "Outline of LEGACY_INTEGRATION_SCENARIO_GUIDE"
             }
           }
         ]
@@ -338,13 +366,17 @@
       "bases:Create new base": false
     }
   },
-  "active": "7229a36e0f78dc58",
+  "active": "65faac9de68e28b6",
   "lastOpenFiles": [
-    "docs/02_AGENT_ROSTER.md",
-    "AGENTS/00_analyst.md",
     "docs/01_WORKFLOW_GUIDE.md",
-    "AGENTS/00_orchestrator.md",
+    "docs/LEGACY_INTEGRATION_SCENARIO_GUIDE.md",
+    "docs/02_AGENT_ROSTER.md",
+    "docs/WORKFLOW_SCENARIO_GUIDE.md",
+    "docs/WORKFLOW_DEPENDENCIES.md",
     "docs/00_MASTER_PLAYBOOK.md",
+    "UTILS/legacy_integrator.md",
+    "AGENTS/00_analyst.md",
+    "AGENTS/00_orchestrator.md",
     "UTILS/doc_scribe.md",
     "HOOKS/pre_session_check.md",
     "AGENTS/03_refiner.md",
@@ -352,7 +384,6 @@
     "AGENTS/05_auditor.md",
     "AGENTS/04_researcher.md",
     "AGENTS/01_architect.md",
-    "docs/WORKFLOW_DEPENDENCIES.md",
     "CONTEXT/project_memory.md",
     "CONTEXT/api_map_lite.md",
     "UTILS/code_merger.md",
@@ -362,11 +393,8 @@
     "AGENTS/02_implementer.md",
     "Untitled",
     "UTILS",
-    "docs/WORKFLOW_SCENARIO_GUIDE.md",
     "SKILLS/langs/rust_ownership.md",
     "SKILLS/langs/react_hooks.md",
-    "SKILLS/core/security_hardening.md",
-    "SKILLS/core/reflection_logic.md",
-    "SKILLS/core/python_strict_typing.md"
+    "SKILLS/core/security_hardening.md"
   ]
 }
