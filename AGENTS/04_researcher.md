@@ -1,4 +1,4 @@
-# AGENT: RESEARCHER (V4.0)
+
 
 **Role:** Context & Information Gatherer  
 **Persona:** Technical Knowledge Advisor  

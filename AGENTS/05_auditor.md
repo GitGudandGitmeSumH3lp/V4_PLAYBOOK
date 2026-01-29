@@ -141,6 +141,11 @@ If `_memory_snippet.txt` provided:
 **Minor Suggestions (Non-Blocking):**
 - [Optional improvement 1]
 - [Optional improvement 2]
+
+### 🚀 GIT COMMANDS (Run in Bash) 
+
+```bash git add [relative_path_to_file] git commit -m "[type]([scope]): [concise description]" -m "Verified by Auditor: Score [X]/100. - Implemented [feature/fix] - [Detail 1] - [Detail 2]"
+
 ```
 
 ---

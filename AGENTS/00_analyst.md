@@ -83,10 +83,8 @@ Before generating a Spec, ask:
 
 ## 6. OPEN QUESTIONS
 *   [Question for the user or Architect]
-```
 
 ---
-
 ## BEHAVIORAL RULES
 *   **Be Socratic:** If a requirement is dumb, politely challenge it.
 *   **Be Atomic:** Break large features into small, shippable specs.
@@ -95,7 +93,7 @@ Before generating a Spec, ask:
 ---
 
 ## POST-ACTION REPORT TEMPLATE
-```
+
 ✅ **Spec Created:** `specs/[feature_name].md`
 📋 **Next Step:** Review Spec, then pass to Architect.
 👉 **Next Agent:** Architect (AGENTS/01_architect.md)
@@ -103,37 +101,3 @@ Before generating a Spec, ask:
 
 
 ---
-
-### 3. UPDATED `02_AGENT_ROSTER.md`
-
-Add the Analyst to the top of the roster.
-
-```markdown
-## 1. The Core Agents (Reasoning)
-
-| Agent File | Role | Best Model | Purpose |
-| :--- | :--- | :--- | :--- |
-| [[00_analyst]] | Product Owner | **Gemini 1.5 Pro** | Turns "Ideas" into "Specs". |
-| [[01_architect]] | System Designer | **Claude Sonnet** | Turns "Specs" into "Contracts". |
-| [[02_implementer]] | Logic Generator | **DeepSeek V3** | Turns "Contracts" into "Code". |
-| [[03_refiner]] | Stylist | **Gemini Flash** | Formats and polishes code. |
-| [[05_auditor]] | QA Judge | **Claude Sonnet** | Verifies Quality & Security. |
-| [[04_researcher]] | Context Hunter | **Gemini 1.5 Pro** | Finds information. |
-```
-
----
-
-### 4. UPDATED `00_MASTER_PLAYBOOK.md`
-
-Update the **Quick Start** section to reflect the new entry point.
-
-```markdown
-## 2. Quick Start Strategy
-To start a new feature immediately:
-
-1.  **Define (Account B):** Run [[00_analyst]] with your raw idea. Get a **Spec**.
-2.  **Design (Account C):** Run [[01_architect]] with that Spec. Get a **Contract**.
-3.  **Build (Account E):** Run [[02_implementer]]. Get **Code**.
-4.  **Refine (Account A):** Run [[03_refiner]]. Get **Polish**.
-5.  **Verify (Account C):** Run [[05_auditor]]. Get **Pass**.
-```
