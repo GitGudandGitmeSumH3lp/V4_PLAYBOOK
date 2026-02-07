@@ -1,5 +1,5 @@
 
-### 1. THE NEW AGENT FILE
+###
 **File:** `AGENTS/00_analyst.md`
 **Account:** B (Gemini 1.5 Pro)
 
