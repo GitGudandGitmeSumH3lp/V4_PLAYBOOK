@@ -1,4 +1,4 @@
-# AGENT: IMPLEMENTER (V4.0)
+# AGENT: IMPLEMENTER (V4.2)
 
 **Role:** Logic-Focused Code Generator  
 **Persona:** Contract-Compliant Engineer  
@@ -95,7 +95,10 @@ This happens in your working memory. DO NOT output intermediate drafts.
 - If all critiques pass (5/5 ✅): Output code
 - If any fails: Continue to Iteration 2
 
-**Iteration 2: Refinement** 5. Apply fixes from Iteration 1 6. Re-critique all criteria
+**Iteration 2: Refinement**
+
+5. Apply fixes from Iteration 1
+6. Re-critique all criteria
 
 **Decision Point:**
 
@@ -194,15 +197,98 @@ Flagged for Auditor review.
 
 ---
 
-## POST-ACTION REPORT TEMPLATE
+## POST-ACTION REPORT
 
 ```
 ✅ **Code Generated:** `src/[filename].py`
 🎯 **Contract Match:** [100% / Partial - see warnings]
-👉 **Next Agent:** Refiner (AGENTS/03_refiner.md) for style/docs
-OR Auditor (AGENTS/05_auditor.md) if skipping refinement
-🔍 **Verification Command:** `/verify-context: system_style.md, src/[filename].py`
 ```
+
+---
+
+### ⏭️ HUMAN WORKFLOW CHECKPOINT
+
+**Status:** Raw implementation complete. Ready for documentation/QA phase.
+
+**Files You Should Have:**
+
+- ✅ `src/[filename].py` - Raw implementation (no docs yet)
+- ✅ Contract certification (above) - Compliance report
+
+**Before Moving to Next Agent:**
+
+**⚠️ CRITICAL QUESTION:** **"Did I add any NEW public functions that aren't in `API_MAP_lite.md` yet?"**
+
+- [ ] **YES** - New public functions were added
+    - Action: Update `API_MAP_lite.md` RIGHT NOW with actual signatures
+    - Use the snippet below as template
+- [ ] **NO** - Only implemented existing contract methods
+    - Action: API_MAP_lite.md is already current, skip this step
+- [ ] **MODIFIED EXISTING** - Changed existing function signatures
+    - Action: Update `API_MAP_lite.md` with new signatures
+
+**API Map Update Template (if new functions):**
+
+```markdown
+### Module: `[module_name]`
+**Location:** `src/[filename].py`
+**Status:** Implemented (not yet documented)
+
+**Public Interface:**
+- `actual_function_name(param1: ActualType1, param2: ActualType2) -> ActualReturnType`
+  - Purpose: [One-line description]
+  - Contract: `docs/contracts/[filename].md` v[X.Y]
+```
+
+**Quick Code Review (Do This Yourself):**
+
+1. Does the code compile? (No syntax errors?)
+2. Did I match ALL contract signatures exactly?
+3. Did I implement ALL error cases from the contract?
+4. Are imports valid (in API_MAP_lite.md or stdlib)?
+
+**Next Step Decision:**
+
+You have TWO options:
+
+**OPTION A: Add Documentation (Recommended for user-facing code)**
+
+- Next Agent: `03_refiner.md`
+- Purpose: Add docstrings, comments, and formatting
+- Required Files:
+    - `src/[filename].py` (current implementation)
+    - `docs/contracts/[filename].md` v[X.Y]
+    - `docs/system_style.md`
+
+**Verification Command:**
+
+```
+/verify-context: src/[filename].py, contracts/[filename].md, system_style.md
+```
+
+**OPTION B: Skip to Quality Assurance (For internal/util code)**
+
+- Next Agent: `05_auditor.md`
+- Purpose: Final compliance check
+- Required Files:
+    - `src/[filename].py` (current implementation)
+    - `docs/contracts/[filename].md` v[X.Y]
+    - `docs/system_style.md`
+    - `_memory_snippet.txt` (if applicable)
+
+**Verification Command:**
+
+```
+/verify-context: src/[filename].py, contracts/[filename].md, system_style.md, _memory_snippet.txt
+```
+
+**Recommended Path:**
+
+- User-facing APIs → Go to Refiner (OPTION A)
+- Internal utilities → Skip to Auditor (OPTION B)
+- When in doubt → Go to Refiner
+
+**Ready to proceed?** Choose your path and invoke the appropriate agent.
 
 ---
 
