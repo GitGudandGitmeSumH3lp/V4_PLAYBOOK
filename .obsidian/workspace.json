@@ -125,12 +125,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AGENTS/02_implementer.md",
+                "file": "AGENTS/04_researcher.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02_implementer"
+              "title": "04_researcher"
             }
           }
         ],
@@ -299,9 +299,13 @@
   },
   "active": "5b22b92ea2e3587a",
   "lastOpenFiles": [
-    "AGENTS/04_researcher.md",
+    "AGENTS/00_orchestratorV2.md",
+    "AGENTS/05_auditor.md",
     "AGENTS/02_implementer.md",
     "AGENTS/01_architect.md",
+    "AGENTS/04_researcher.md",
+    "AGENTS/00_orchestrator.md",
+    "state_sync_workflow.md.md",
     "UTILS/code_merger.md",
     "UTILS/state_updater.md",
     "Untitled.md",
@@ -316,15 +320,11 @@
     "__STATE.MD.md",
     "_ORCH_STATE.md.md",
     "_TREE_LITE.txt.md",
-    "AGENTS/00_orchestratorV2.md",
-    "state_sync_workflow.md.md",
     "README.md",
     "AGENTS/00_analyst.md",
-    "AGENTS/00_orchestrator.md",
     "VALENTINES.md",
     "docs/00_MASTER_PLAYBOOK.md",
     "AGENTS/03_refiner.md",
-    "CONTEXT/api_map_lite.md",
     "Untitled.base",
     "docs/PLAYBOOK_LEGACY",
     "UTILS/legacy_integration",
